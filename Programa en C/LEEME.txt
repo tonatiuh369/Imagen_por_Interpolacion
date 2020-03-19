@@ -1,0 +1,18 @@
+
+
+Los archivos *.c son los programas en lenguaje C que recrean el Snoopy mediante InterpolaciOn de Trazadores CUbicos Sujetos. Corresponde un programa a cada secciOn o corte realizado a la imagen original. Es necesario compilar todos los programas para obtener los archivos de datos de todas las secciones. Para compilarlos hay que incluir la instrucciOn -lm al final.
+
+
+
+Los archivos *.dat son los archivos de datos obtenidos con los programas *.c. Corresponde un archivo .dat a cada secciOn de la imagen original. Si por error se elimina alguno puede generarse otra vez al ejecutar el programa .c correspondiente.
+
+
+
+Los archivos *.p son los scripts para Gnuplot. Grafican en un sOlo archivo los datos de todos los archivos .dat.  En particular:
+	
+	+    snoopy[interpolacion].p grafica la imagen interpolada. Este archivo representa el resultado final del proyecto.
+	
+	+    snoopy[secciones].p grafica la imagen interpolada mostrando con distintos colores las secciones utilizadas.
+
+	+    snoopy[puntos].p grafica la imagen interpolada mostrando los puntos utilizados para interpolar.
+
